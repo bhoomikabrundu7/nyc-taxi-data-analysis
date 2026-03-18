@@ -1,7 +1,8 @@
 import pandas as pd
 import os
 import sys
-
+import seaborn as sns
+import matplotlib.pyplot as plt
 class TaxiPipeline:
     def __init__(self, folder_path="../data/raw"):
         """
@@ -32,7 +33,7 @@ class TaxiPipeline:
             print(f"Error: File not found at {full_path}")
             return None
 
-# --- Execution Block (Only runs if you run this file directly) ---
+# --- Execution Block (Only runs if you run this file directly)--
 if __name__ == "__main__":
     # If running from the root, we use 'data/raw'
     RAW_DATA_PATH = "data/raw"
